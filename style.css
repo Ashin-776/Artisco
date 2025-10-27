@@ -1,0 +1,152 @@
+
+
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    border: 2px solid blue;
+    margin: 10px;
+}
+
+.custom-navbar-border {
+    border-bottom: 2px solid #505050; /* black */
+}
+.custom-navbar-border2 {
+    border: 2px solid #505050; /* black */
+   
+}
+
+.login-bg {
+  /* Pexels stained-glass image provided by user */
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://images.pexels.com/photos/161154/stained-glass-spiral-circle-pattern-161154.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+.signup-bg {
+  /* gallery-themed background with dark overlay for readability */
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://cdn.shopify.com/s/files/1/0380/6078/5803/files/how-to-frame-your-own-art_2048x2048.jpg?v=1682816634') no-repeat center center fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+.home-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://images.pexels.com/photos/884788/pexels-photo-884788.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.art-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://cdn.shopify.com/s/files/1/0380/6078/5803/files/how-to-frame-your-own-art_2048x2048.jpg?v=1682816634') no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    color: #fff;
+}
+
+
+
+.bg-semi-transparent-top {
+    background-color: rgba(0, 0, 0, 0.3) !important; /* 0.6 = 60% opacity */
+    box-shadow: none; /* Optional */
+    color: #fff;
+    border-radius: 2px;
+    backdrop-filter: blur(20px); /* Adds Gaussian blur */
+}
+.bg-semi-transparent {
+    background-color: rgba(0, 0, 0, 0.3) !important; /* 0.6 = 60% opacity */
+    box-shadow: none; /* Optional */
+    color: #fff;
+    border-radius: 8%;
+    backdrop-filter: blur(20px); /* Adds Gaussian blur */
+}
+.form-control {
+    background-color: #222 !important;
+    color: #fff !important;
+    border: 1px solid #444;
+}
+
+.form-control::placeholder {
+    color: #bbb;
+    opacity: 1;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+.image-row-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem; /* space between cards */
+    height: max-content;
+
+  
+}
+
+.image-card {
+  border: 4px solid #f8f9fa;  /* off-white border */
+  color: #000;                /* black text color */
+  padding: 0.5rem;
+  text-align: center;
+  flex: auto;
+  background-color: #f8f9fa;
+  width: auto;
+  max-height:min-content;
+  border-radius: 5px;
+  margin-top: 50px;
+  
+  }
+
+.image-card h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #000;    
+             /* ensure titles are black */
+}
+
+.image-card img {
+  width: fit-content;      /* makes the image fill its card’s width */
+    height: 400px;     /* auto-adjust height to keep aspect ratio */
+  display: block;   /* removes any inline whitespace */
+  object-fit: cover;/* crops if needed, or use ‘contain’ to letterbox */
+}
+
+.slider {
+  overflow: hidden;
+  width: 100%;
+}
+
+.slide-track {
+  display: flex;
+  gap: 2rem;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* Keep your existing .image-card rules, just remove margin-top */
+.image-card {
+  border: 4px solid #f8f9fa;
+  background: #f8f9fa;
+  flex: 0 0 auto;
+  width: 300px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.image-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.slider:hover .slide-track { animation-play-state: paused; }
+
