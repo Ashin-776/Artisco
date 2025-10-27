@@ -1,6 +1,5 @@
 
 
-
 .box {
     width: 100px;
     height: 100px;
@@ -149,4 +148,3 @@ h1{
 }
 
 .slider:hover .slide-track { animation-play-state: paused; }
-
